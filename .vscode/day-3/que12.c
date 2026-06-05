@@ -15,11 +15,11 @@ int main ()  {
     while (y != 0)
     {
         temp = y;
-        y = x%y;
+        y = x % y;
         x = temp;
     }
     gcd = x;
-    lcm = (a*b)/gcd;
+    lcm = (a*b) / gcd;
 
     printf("LCM = %d\n",lcm);
     return 0; 
