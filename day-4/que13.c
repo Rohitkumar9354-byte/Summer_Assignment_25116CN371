@@ -15,7 +15,6 @@ int main() {
 
         printf("%d ", first);
         next = first + second;
-        first = second;
         second = next;
     }
 
