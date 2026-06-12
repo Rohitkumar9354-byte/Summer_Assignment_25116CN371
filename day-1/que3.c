@@ -1,29 +1,22 @@
-#include <stdio.h>
+//Write a program to Find factorial of a number.
 
-int main() 
-{
+#include <stdio.h>
+int main() {
     int num, i;
     long long factorial = 1;
 
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    if (num < 0)
-    
-    {
-        printf("Factorial does not exist for negative numbers.");
+    if (num < 0){
+    printf("Factorial does not exist for negative numbers.");
     } 
-    
     else
      {
-        for (i = 1; i <= num; i++)
-         {
+    for (i = 1; i <= num; i++) {
             factorial = factorial * i;
         }
-
         printf("Factorial of %d = %lld", num, factorial);
     }
-
     return 0;
-     
 }
