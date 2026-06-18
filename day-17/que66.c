@@ -1,0 +1,30 @@
+//Write a program to Union of arrays
+
+#include<stdio.h>
+int main() {
+    int a[50], b[50];
+    int n1, n2, i, j, found;
+    printf("Enter the size of the first array:");
+    scanf("%d",&n1);
+    for(i=0; i<n1; i++) 
+    scanf("%d",&a[i]);
+printf("Enter the size of the second array:");
+    scanf("%d",&n2);
+    for(i=0; i<n2; i++) 
+    scanf("%d",&b[i]);
+    printf("union: ");
+    for(i=0; i<n1; i++) 
+    printf("%d", a[i]);
+    for(i=0; i<n2; i++) {
+        found = 0;
+        for(j=0; j<n1; j++) {
+            if(b[i]==a[j]) {
+                found = 1;
+                break;
+            }
+        }
+        if(!found)
+        printf("%d", b[i]);
+    }
+    return 0;
+}
